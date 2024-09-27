@@ -99,7 +99,7 @@ const products = [
   },
 ];
 
-const ProductCards = () => {
+const Shop = () => {
   const rowRef1 = useRef(null);
   const rowRef2 = useRef(null);
 
@@ -113,7 +113,7 @@ const ProductCards = () => {
 
   return (
     <div className="py-8">
-    <h3 className='text-3xl font-bold pb-3 text-green-800'>Our Newest Vegetables</h3>
+    <h3 className='text-3xl font-bold pb-3 text-green-800'>Shop Now</h3>
       {/* Row 1 */}
       <div className="flex items-center mb-4">
         <button
@@ -128,7 +128,7 @@ const ProductCards = () => {
               <img
                 src={product.image}
                 alt={product.name}
-                className="w-full h-42 object-cover rounded-md mb-2"
+                className="w-full h-35 object-cover rounded-md mb-2"
               />
               <h3 className="text-lg font-bold mb-1">{product.name}</h3>
               <p className="text-green-600 text-xl mb-2">{product.price}</p>
@@ -160,7 +160,7 @@ const ProductCards = () => {
               <img
                 src={product.image}
                 alt={product.name}
-                className="w-full h-42 object-cover rounded-md mb-2"
+                className="w-full h-35 object-cover rounded-md mb-2"
               />
               <h3 className="text-lg font-bold mb-1">{product.name}</h3>
               <p className="text-green-600 text-xl mb-2">{product.price}</p>
@@ -177,11 +177,41 @@ const ProductCards = () => {
           &gt;
         </button>
       </div>
-      <button class="bg-gradient-to-r from-green-800 bg-green-700 text-white font-bold py-2 px-4 rounded shadow-lg pulse transition-transform transform hover:scale-105">
-        Shop More
-    </button>
+     
+           {/* Row 1 */}
+           <div className="flex items-center mb-4">
+        <button
+          className="bg-green-600 text-white p-2 rounded-l hover:bg-green-500"
+          onClick={() => scroll(rowRef1, 'left')}
+        >
+          &lt;
+        </button>
+        <div className="flex overflow-x-auto space-x-4 scroll-container" ref={rowRef1}>
+          {products.slice(0, 8).map((product) => (
+            <div key={product.id} className="bg-white rounded-lg shadow-lg p-4 flex-none w-full max-w-[300px] mb-4">
+              <img
+                src={product.image}
+                alt={product.name}
+                className="w-full h-35 object-cover rounded-md mb-2"
+              />
+              <h3 className="text-lg font-bold mb-1">{product.name}</h3>
+              <p className="text-green-600 text-xl mb-2">{product.price}</p>
+              <button className="bg-green-600 text-white py-3 px-4 rounded hover:bg-green-500">
+                Add to Cart
+              </button>
+            </div>
+          ))}
+        </div>
+        <button
+          className="bg-green-600 text-white p-2 rounded-r hover:bg-green-500"
+          onClick={() => scroll(rowRef1, 'right')}
+        >
+          &gt;
+        </button>
+      </div>
+
     </div>
   );
 };
 
-export default ProductCards;
+export default Shop;

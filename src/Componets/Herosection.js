@@ -12,9 +12,9 @@ import ProductCards from "./Products";
 
 const navigation = [
   { name: 'Home', href: '#' },
-  { name: 'Shop', href: '#' },
-  { name: 'About', href: '#' },
-  { name: 'Contact', href: '#' },
+  { name: 'Shop', href: '/shop' },
+  { name: 'About', href: '/about' },
+  { name: 'Contact', href: "/contact" },
 ];
 
 export default function HeroSection() {
@@ -153,7 +153,7 @@ export default function HeroSection() {
       <ProductCards/>
       <Subscribe/>
       <AboutUs/>
-      <Footer/>
+     
     </div>
   );
 }
