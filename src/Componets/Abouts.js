@@ -72,20 +72,21 @@ const About = () => {
                 <h3 className="text-3xl font-bold text-center mb-6">Fresh from the Farm</h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <img 
-                        src="https://images.unsplash.com/photo-1558971990-5e3d3f2895b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400"
+                        src="https://i.ibb.co/3vFXycW/fresshh.png"
                         alt="Fresh Vegetables"
                         className="rounded-lg shadow-lg"
                     />
                     <img 
-                        src="https://images.unsplash.com/photo-1555369994-b6ffb597ff5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxMjA3fDB8MHxwaG90by1wYWxlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400"
-                        alt="Harvested Produce"
-                        className="rounded-lg shadow-lg"
-                    />
-                    <img 
-                        src="https://images.unsplash.com/photo-1534126519608-7c7715e00846?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxMjA3fDB8MHxwaG90by1wYWxlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400"
+                        src="https://i.ibb.co/0c2yTLH/asdmnwdw.png"
                         alt="Organic Farming"
                         className="rounded-lg shadow-lg"
                     />
+                    <img 
+                        src="https://i.ibb.co/kDXZzjx/sdhgghds.png"
+                        alt="Harvested Produce"
+                        className="rounded-lg shadow-lg"
+                    />
+                    
                 </div>
             </div>
         </section>
