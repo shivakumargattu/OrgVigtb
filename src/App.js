@@ -5,6 +5,7 @@ import HeroSection from './Componets/Herosection';
 import Shop from './Componets/Shop';
 import Footer from './Componets/Footer';
 import About from './Componets/Abouts';
+import Contact from './Componets/Contact';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
          <Route path='/' element={<HeroSection/>} />
          <Route path='/shop' element={<Shop/>}/>
          <Route path='/about' element={<About/>}/>
+         <Route path='/contact' element={<Contact/>}/>
         </Routes>
         <Footer/>
       </BrowserRouter>

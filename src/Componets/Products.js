@@ -178,7 +178,7 @@ const ProductCards = () => {
         </button>
       </div>
       <button class="bg-gradient-to-r from-green-800 bg-green-700 text-white font-bold py-2 px-4 rounded shadow-lg pulse transition-transform transform hover:scale-105">
-        Shop More
+       <a href='/shop'>Shop More</a> 
     </button>
     </div>
   );
