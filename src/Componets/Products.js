@@ -132,7 +132,7 @@ const ProductCards = () => {
               />
               <h3 className="text-lg font-bold mb-1">{product.name}</h3>
               <p className="text-green-600 text-xl mb-2">{product.price}</p>
-              <button className="bg-green-600 text-white py-1 px-4 rounded hover:bg-green-500">
+              <button className="bg-green-600 text-white py-3 px-4 rounded hover:bg-green-500">
                 Add to Cart
               </button>
             </div>
@@ -164,7 +164,7 @@ const ProductCards = () => {
               />
               <h3 className="text-lg font-bold mb-1">{product.name}</h3>
               <p className="text-green-600 text-xl mb-2">{product.price}</p>
-              <button className="bg-green-600 text-white py-1 px-4 rounded hover:bg-green-500">
+              <button className="bg-green-600 text-white py-3 px-4 rounded hover:bg-green-500">
                 Add to Cart
               </button>
             </div>
