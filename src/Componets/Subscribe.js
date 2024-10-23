@@ -6,7 +6,7 @@ const Subscribe = () => {
       <div className="flex justify-center items-center">
         <img
           src="https://elements-resized.envatousercontent.com/envato-shoebox/7f5a/55fc-5640-4958-ba59-5856c15477b6/1N3A7259.jpg?w=1600&cf_fit=scale-down&mark-alpha=18&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark4.png&q=85&format=auto&s=6d59fd5d3ef12643c09b7049762f7a9b2b956e4f8fede03918d6376a11513685"
-          alt="Subscription Image"
+          alt="Subscription "
           className="w-full h-auto rounded-lg"
         />
       </div>

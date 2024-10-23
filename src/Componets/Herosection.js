@@ -9,6 +9,7 @@ import Subscribe from "./Subscribe";
 import Footer from "./Footer";
 import AboutUs from "./AboutUs";
 import ProductCards from "./Products";
+import { Link } from "react-router-dom";
 
 const navigation = [
   { name: 'Home', href: '#' },
@@ -37,7 +38,7 @@ export default function HeroSection() {
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
             >
               <span className="sr-only">Open main menu</span>
-              <Bars3Icon aria-hidden="true" className="h-6 w-6" />
+           <Bars3Icon aria-hidden="true" className="h-6 w-6" />
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
@@ -50,7 +51,7 @@ export default function HeroSection() {
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
               <div className="flex items-center justify-between">
-                <TiShoppingCart size={29} className="mr-6" /> <FaRegUser size={23} />
+              <Link to="/register" ><TiShoppingCart size={29} className="mr-6" /> <FaRegUser size={23} /> </Link>
               </div>
             </a>
           </div>
