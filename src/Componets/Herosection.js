@@ -1,5 +1,7 @@
 import { FaRegUser } from "react-icons/fa";
 import { TiShoppingCart } from "react-icons/ti";
+import { FiLogOut } from "react-icons/fi";
+
 
 import { useState } from 'react';
 import { Dialog, DialogPanel } from '@headlessui/react';
@@ -20,6 +22,17 @@ const navigation = [
 
 export default function HeroSection() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const token = localStorage.getItem('token');
+
+  const handleLogout = () => {
+      localStorage.removeItem('token');
+      window.location.href = '/login'; // Redirect to login after logout
+  };
+
+  if (!token) {
+      return <p>You need to log in to access this page.</p>;
+  }
+
 
   return (
     <div className="bg-white">
@@ -51,7 +64,7 @@ export default function HeroSection() {
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
               <div className="flex items-center justify-between">
-              <Link to="/register" ><TiShoppingCart size={29} className="mr-6" /> <FaRegUser size={23} /> </Link>
+              <TiShoppingCart size={29} className="mr-6" />  <button onClick={handleLogout}><FiLogOut size={23} /></button>   
               </div>
             </a>
           </div>
@@ -154,7 +167,7 @@ export default function HeroSection() {
       <ProductCards/>
       <Subscribe/>
       <AboutUs/>
-     
+     <Footer/>  
     </div>
   );
 }

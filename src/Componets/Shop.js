@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import Footer from './Footer';
 
 const products = [
   {
@@ -209,7 +210,7 @@ const Shop = () => {
           &gt;
         </button>
       </div>
-
+<Footer/>
     </div>
   );
 };

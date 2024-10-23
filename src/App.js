@@ -17,20 +17,20 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-                    <Route path='/register' element={<Register/>}/>
+                    <Route path='/' element={<Register/>}/>
                     <Route path='/login' element={<Login/>}/>
                    <Route path='/protected' element={<ProtectedRoute element={<Protected />} />} />
 
                   {/* Protected Routes */}
 
-                   <Route path='/' element={<ProtectedRoute element={<HeroSection />} />} />
+                   <Route path='/home' element={<ProtectedRoute element={<HeroSection />} />} />
                     <Route path='/shop' element={<ProtectedRoute element={<Shop />} />} />
                     <Route path='/about' element={<ProtectedRoute element={<About />} />} />
                     <Route path='/contact' element={<ProtectedRoute element={<Contact />} />} />
                 
-
+                    
         </Routes>
-        <Footer/>
+        
       </BrowserRouter>
     </div>
   );

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate for redirection
+import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate for redirection
 
 const Register = () => {
     const [email, setEmail] = useState('');
@@ -30,7 +30,7 @@ const Register = () => {
                 onSubmit={handleSubmit} 
                 className="bg-white shadow-md rounded px-8 py-6 w-full max-w-sm"
             >
-                <h2 className="text-2xl font-bold mb-6 text-center">Register</h2>
+                <h2 className="text-2xl font-bold mb-6 text-green-600 text-center">Register</h2>
 
                 <div className="mb-4">
                     <input 
@@ -39,7 +39,7 @@ const Register = () => {
                         onChange={(e) => setUsername(e.target.value)} 
                         placeholder="Username" 
                         required 
-                        className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-500"
+                        className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-green-700"
                     />
                 </div>
                 
@@ -50,7 +50,7 @@ const Register = () => {
                         onChange={(e) => setEmail(e.target.value)} 
                         placeholder="Email" 
                         required 
-                        className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-500"
+                        className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-green-700"
                     />
                 </div>
 
@@ -61,16 +61,24 @@ const Register = () => {
                         onChange={(e) => setPassword(e.target.value)} 
                         placeholder="Password" 
                         required 
-                        className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-500"
+                        className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-green-700"
                     />
                 </div>
 
                 <button 
                     type="submit" 
-                    className="w-full bg-blue-500 text-white p-3 rounded hover:bg-blue-600 transition duration-200"
+                    className="w-full bg-green-600 text-white p-3 rounded hover:bg-green-700 transition duration-200"
                 >
                     Register
                 </button>
+                <p>OR</p>
+                <Link to="/login"><button 
+                     
+                    className="w-full bg-green-600 text-white p-3 rounded hover:bg-green-700 transition duration-200"
+                >
+                    Login
+                </button></Link>
+
             </form>
         </div>
     );
