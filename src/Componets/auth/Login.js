@@ -10,7 +10,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const { data } = await axios.post('http://localhost:5000/auth/login', { email, password });
+            const { data } = await axios.post('https://authentication-jwt-backend.onrender.com/login', { email, password });
             localStorage.setItem('token', data.token);
             alert('Logged in successfully');
             navigate('/home'); // Redirect to protected page
