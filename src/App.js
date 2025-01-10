@@ -17,11 +17,9 @@ import ProtectedRoute from './Componets/auth/ProtectedRoute';
 export const store= createContext()
 
 function App() {
-  const [token, setToken]=useContext(null)
   return (
     <div className="App">
     
-    <store.Provider value={[token,setToken]}>
       <BrowserRouter>
         <Routes>
                     <Route path='/' element={<Register/>}/>
@@ -39,7 +37,6 @@ function App() {
         </Routes>
         
       </BrowserRouter>
-      </store.Provider>
     </div>
   );
 }
