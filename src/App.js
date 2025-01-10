@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="App">
     
-    <store.Provider>
+    <store.Provider value={[token,setToken]}>
       <BrowserRouter>
         <Routes>
                     <Route path='/' element={<Register/>}/>
